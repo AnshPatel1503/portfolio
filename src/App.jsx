@@ -53,7 +53,7 @@ function App() {
     <div className="portfolio">
       <header className="navbar">
         <div className="logo">
-        <img src="./logo-2.png`" alt="Ansh Patel" className="logo-image"/>
+        <img src="./logo-2.png" alt="Ansh Patel" className="logo-image"/>
         </div>
 
         <nav>
