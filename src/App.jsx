@@ -52,7 +52,9 @@ function App() {
   return (
     <div className="portfolio">
       <header className="navbar">
-        <div className="logo">Ansh<span>.</span></div>
+        <div className="logo">
+        <img src="/logo-2.png" alt="Ansh Patel" className="logo-image"/>
+        </div>
 
         <nav>
           <a href="#home">Home</a>
@@ -123,7 +125,7 @@ function App() {
               <div className="profile-glow"></div>
 
               <img
-                src="/profile.jpg"
+                src="/profile.png"
                 alt="Ansh Patel"
                 className="profile-image"
               />
