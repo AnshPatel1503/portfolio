@@ -189,7 +189,7 @@ a {
 }
 
 .section-text {
-  max-width: 750px;
+  /*max-width: 750px;*/
   color: #aaa;
   font-size: 17px;
   line-height: 1.8;
@@ -320,9 +320,12 @@ footer {
 }
 
 .about-stats {
-  margin-top: 45px;
+  margin-top: 10px;
   display: flex;
-  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 100px;
 }
 
 .about-stats div {
@@ -468,8 +471,8 @@ footer {
   }
 }
 .experience-list {
-  margin-top: 50px;
-  max-width: 900px;
+  margin-top: 5px;
+  /*max-width: 900px;*/
 }
 
 .experience-item {
@@ -656,4 +659,15 @@ footer {
 .contact-form button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+/* Background Icon Styling */
+.skill-bg-icon {
+  position: absolute;
+  margin-top: -20px;
+  font-size: 150px;  /* Bada size watermark look ke liye */
+  opacity: 0.06;     /* Halka translucent light effect */
+  color: white;    /* Background se match karta hua color */
+  pointer-events: none; /* Mouse interactions ko block karne ke liye */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }

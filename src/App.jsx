@@ -1,5 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import { SiPhp, SiLaravel, SiCodeigniter, SiNextdotjs, SiReact, SiJavascript, SiJquery, SiMysql } from 'react-icons/si';
+import { TbApi } from 'react-icons/tb';
 import "./App.css";
 
 function App() {
@@ -80,11 +82,7 @@ function App() {
           <div className="hero-content">
             <p className="hero-subtitle">HELLO, I'M</p>
 
-            <h1>
-              Ansh Patel
-              <br />
-              <span>Web Developer</span>
-            </h1>
+            <h1>Ansh Patel<br /><span>Web Developer</span></h1>
 
             <p className="hero-description">
               I build modern, responsive and user-friendly web applications
@@ -92,43 +90,22 @@ function App() {
             </p>
 
             <div className="hero-buttons">
-              <a href="#projects" className="primary-btn">
-                View Projects
-              </a>
+              <a href="#projects" className="primary-btn">View Projects</a>
 
-              <a href="#contact" className="secondary-btn">
-                Contact Me
-              </a>
+              <a href="#contact" className="secondary-btn">Contact Me</a>
             </div>
 
             <div className="social-links">
-              <a
-                href="https://github.com/YOUR_USERNAME"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub ↗
-              </a>
+              <a href="https://github.com/testerme888" target="_blank" rel="noreferrer">GitHub ↗</a>
 
-              <a
-                href="https://www.linkedin.com/in/YOUR_USERNAME/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn ↗
-              </a>
+              <a href="https://www.linkedin.com/in/ansh-patel-070692216/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             </div>
           </div>
 
           <div className="hero-card">
             <div className="profile-wrapper">
               <div className="profile-glow"></div>
-
-              <img
-                src="./profile.png"
-                alt="Ansh Patel"
-                className="profile-image"
-              />
+              <img src="./profile.png" alt="Ansh Patel" className="profile-image"/>
             </div>
           </div>
         </section>
@@ -144,7 +121,7 @@ function App() {
             and MySQL.
           </p>
 
-          <p className="section-text about-second">
+          <p className="section-text">
             I enjoy developing REST APIs, admin panels, authentication systems,
             payment integrations and responsive user interfaces. My goal is to
             create applications that are clean, secure, maintainable and easy to use.
@@ -175,33 +152,56 @@ function App() {
 
           <div className="skills-grid">
             <div className="skill">
-              <h3>Laravel</h3>
-              <p>Backend & REST API Development</p>
-            </div>
-
-            <div className="skill">
+              <SiPhp className="skill-bg-icon" />
               <h3>PHP</h3>
-              <p>Object-Oriented & Server-side Development</p>
+              <p>Developed dynamic web applications using core PHP and MVC structure with clean, modular code.</p>
             </div>
 
             <div className="skill">
+              <SiLaravel className="skill-bg-icon" />
+              <h3>Laravel</h3>
+              <p>Built full-stack Laravel apps including APIs, authentication, database design, and blade templating.</p>
+            </div>
+            <div className="skill">
+              <SiCodeigniter className="skill-bg-icon" />
+              <h3>Codeigniter</h3>
+              <p>Created lightweight, high-performance applications using CodeIgniter with custom modules.</p>
+            </div>
+
+            <div className="skill">
+              <SiNextdotjs className="skill-bg-icon" />
+              <h3>Next.js</h3>
+              <p>Engineered SEO-optimized SEO web apps using Server-Side Rendering (SSR), Static Site Generation (SSG), and optimized API routes.</p>
+            </div>
+
+            <div className="skill">
+            <SiReact className="skill-bg-icon" />
               <h3>React</h3>
-              <p>Modern Frontend Applications</p>
+              <p>Built responsive, high-performance Single Page Applications (SPAs) utilizing hooks, state management, and reusable UI components.</p>
             </div>
 
             <div className="skill">
+              <SiJavascript className="skill-bg-icon" />
               <h3>JavaScript</h3>
-              <p>Interactive Web Applications</p>
+              <p>Implemented client-side logic, form validation, and event-driven programming.</p>
             </div>
 
             <div className="skill">
+              <SiJquery className="skill-bg-icon" />
+              <h3>Jquery</h3>
+              <p>Used jQuery for DOM manipulation, animations, and AJAX requests to enhance UI interactivity.</p>
+            </div>
+            
+            <div className="skill">
+              <SiMysql className="skill-bg-icon" />
               <h3>MySQL</h3>
-              <p>Database Design & Optimization</p>
+              <p>Designed and optimized relational databases and complex queries for scalable web apps.</p>
             </div>
 
             <div className="skill">
+            <TbApi className="skill-bg-icon" />
               <h3>REST API</h3>
-              <p>API Development & Integration</p>
+              <p>Developed and consumed RESTful APIs for seamless integration between frontend and backend systems.</p>
             </div>
           </div>
         </section>
@@ -211,30 +211,89 @@ function App() {
           <h2>My Professional Journey</h2>
 
           <div className="experience-list">
-
+            {/* Current Role */}
             <div className="experience-item">
               <div className="experience-year">
-                2023 — Present
+                March 2026 — Present
               </div>
 
               <div className="experience-content">
-                <h3>Web Developer</h3>
-                <h4>Web Perfection Technology</h4>
+                <h3>Full Stack Developer</h3>
+                <h4>
+                  <a href="https://ymcoders.in/" target="_blank" rel="noopener noreferrer">
+                    YMCODERS Technologies Pvt. Ltd.
+                  </a>
+                </h4>
 
                 <p>
-                  Developing and maintaining modern web applications using
-                  Laravel, PHP, React, JavaScript and MySQL.
+                  Architecting dynamic web ecosystems and end-to-end applications using the modern PHP stack, React, and robust relational databases.
                 </p>
 
                 <ul>
-                  <li>Developed Laravel-based web applications and REST APIs</li>
-                  <li>Built responsive React frontend applications</li>
-                  <li>Worked with MySQL databases and API integrations</li>
-                  <li>Implemented authentication and admin dashboards</li>
+                  <li>Engineered reusable React component libraries for sleek, client-facing interfaces.</li>
+                  <li>Designed and documented scalable, secure RESTful APIs leveraging Laravel frameworks.</li>
+                  <li>Optimized MySQL query performance to handle complex data aggregation workflows efficiently.</li>
+                  <li>Integrated complex third-party payment gateways and webhook notification microservices.</li>
                 </ul>
               </div>
             </div>
 
+            {/* Mid Level Role */}
+            <div className="experience-item">
+              <div className="experience-year">
+                Aug 2025 — Feb 2026
+              </div>
+
+              <div className="experience-content">
+                <h3>Laravel Developer</h3>
+                <h4>
+                  <a href="https://swasoftech.com/" target="_blank" rel="noopener noreferrer">
+                    Swa Softech Pvt. Ltd.
+                  </a>
+                </h4>
+
+                <p>
+                  Focused on backend performance tuning, secure database design, and modular MVC application structure development.
+                </p>
+
+                <ul>
+                  <li>Developed granular role-based access control (RBAC) modules for multi-tenant admin dashboards.</li>
+                  <li>Utilized Laravel Eloquent ORM to construct intricate database migrations and seed profiles.</li>
+                  <li>Collaborated on frontend modernization projects by introducing AJAX and jQuery dynamic loading.</li>
+                  <li>Integrated PayPal SDK into e-commerce checkout flows for secure international user transactions.**</li>        
+                  <li>Implemented Razorpay Payment Gateway API for secure UPI, net banking, and instant domestic payment processing.</li>
+                  <li>Implemented system-wide automated data sanitization and strict input verification middleware.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Early Career Role */}
+            <div className="experience-item">
+              <div className="experience-year">
+                Aug 2023 — Aug 2025
+              </div>
+
+              <div className="experience-content">
+                <h3>PHP Developer</h3>
+                <h4>
+                  <a href="https://webvire.com/" target="_blank" rel="noopener noreferrer">
+                    WebVire Software Solutions
+                  </a>
+                </h4>
+
+                <p>
+                  Maintained, debugged, and optimized legacy PHP systems while assisting in early-stage CodeIgniter development.
+                </p>
+
+                <ul>
+                  <li>Maintained custom web platforms built natively on core PHP and CodeIgniter architectures.</li>
+                  <li>Translated manual workflows into automated dashboard analytics using jQuery UI engines.</li>
+                  <li>Integrated Stripe Payment Gateway with webhooks for handling recurring subscriptions, automatic billing, and multi-currency transactions.</li>
+                  <li>Debugged persistent database deadlocks and resolved application security vulnerabilities.</li>
+                  <li>Authored technical documentation detailing code updates, architecture maps, and schemas.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
         <section id="services" className="section">
@@ -374,53 +433,19 @@ function App() {
 
           <div>
             <span>LinkedIn</span>
-            <a
-              href="linkedin.com/in/ansh-patel-070692216/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn Profile
-            </a>
+            <a href="https://www.linkedin.com/in/ansh-patel-070692216/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
           </div>
         </div>
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-row">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
+              <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required/>
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
+              <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
             </div>
 
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              value={formData.subject}
-              onChange={handleChange}
-              required
-            />
+            <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} required/>
 
-            <textarea
-              name="message"
-              rows="7"
-              placeholder="Your Message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
+            <textarea name="message" rows="7" placeholder="Your Message" value={formData.message} onChange={handleChange} required></textarea>
 
             <button type="submit" className="primary-btn" disabled={sending}>{sending ? "Sending..." : "Send Message"}</button>
             {status && (<p className="form-status">{status}</p>)}
