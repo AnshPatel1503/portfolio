@@ -53,7 +53,7 @@ function App() {
     <div className="portfolio">
       <header className="navbar">
         <div className="logo">
-        <img src="{`${import.meta.env.BASE_URL}logo-2.png`}" alt="Ansh Patel" className="logo-image"/>
+        <img src="./logo-2.png`" alt="Ansh Patel" className="logo-image"/>
         </div>
 
         <nav>
@@ -125,7 +125,7 @@ function App() {
               <div className="profile-glow"></div>
 
               <img
-                src="{`${import.meta.env.BASE_URL}profile.png`}"
+                src="./profile.png"
                 alt="Ansh Patel"
                 className="profile-image"
               />
