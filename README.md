@@ -1,16 +1,168 @@
-# React + Vite
+# Ansh Patel — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive personal portfolio website built with **React + Vite** to showcase my skills, experience, projects and contact information.
 
-Currently, two official plugins are available:
+## 🚀 Live Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Portfolio:** `https://YOUR_USERNAME.github.io/portfolio/`
 
-## React Compiler
+## 👨‍💻 About Me
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I am a Web Developer focused on building modern, scalable and user-friendly web applications.
 
-## Expanding the Oxlint configuration
+My primary technologies include:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+* Laravel
+* PHP
+* React
+* JavaScript
+* MySQL
+* REST APIs
+* HTML5
+* CSS3
+
+I enjoy developing complete web applications, admin dashboards, REST APIs, authentication systems and responsive user interfaces.
+
+## 🛠️ Tech Stack
+
+| Technology | Usage                          |
+| ---------- | ------------------------------ |
+| React      | Frontend development           |
+| Vite       | Frontend build tool            |
+| JavaScript | Application logic              |
+| Laravel    | Backend development            |
+| PHP        | Server-side development        |
+| MySQL      | Database                       |
+| REST API   | Frontend/backend communication |
+| CSS3       | Responsive UI                  |
+| EmailJS    | Contact form                   |
+
+## ✨ Portfolio Features
+
+* Responsive design
+* Modern dark developer UI
+* Hero section
+* About section
+* Skills section
+* Professional experience
+* Services section
+* Project showcase
+* Contact form
+* EmailJS integration
+* GitHub integration
+* LinkedIn integration
+* SEO meta tags
+* Open Graph social preview
+* Favicon
+* Mobile-friendly layout
+
+## 📂 Featured Projects
+
+### 1. NGO Management System
+
+A full-stack NGO management platform with features for:
+
+* Projects
+* Events
+* Gallery
+* Volunteers
+* Donations
+* Members
+* Contacts
+* Admin dashboard
+
+**Technologies:** Laravel, React, MySQL, REST API
+
+### 2. E-Commerce Application
+
+A modern e-commerce application with:
+
+* User authentication
+* Product management
+* Shopping cart
+* Orders
+* Payment integration
+* Admin management
+
+**Technologies:** Laravel, React, MySQL, Razorpay
+
+### 3. REST API Application
+
+A secure API-based application featuring:
+
+* Authentication
+* Protected routes
+* Database relationships
+* API integration
+* Frontend communication
+
+**Technologies:** Laravel, Sanctum, REST API, MySQL
+
+## 📁 Project Structure
+
+```text
+portfolio/
+├── public/
+│   ├── favicon.png
+│   ├── profile.jpg
+│   └── social-preview.png
+│
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## ⚙️ Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/portfolio.git
+```
+
+Go into the project:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:5173
+```
+
+## 📧 Contact
+
+If you would like to discuss a project, job opportunity or collaboration, you can contact me through my portfolio.
+
+* GitHub: `https://github.com/YOUR_USERNAME`
+* LinkedIn: `https://www.linkedin.com/in/YOUR_USERNAME/`
+* Email: `YOUR_EMAIL@example.com`
+
+## 📄 License
+
+This project is created for personal portfolio and demonstration purposes.
+
+---
+
+**Built with React + Vite by Ansh Patel.**
