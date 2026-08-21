@@ -74,7 +74,7 @@ function App() {
         <a href="#contact" className="nav-btn">
           Hire Me
         </a>
-        </nav>
+        </nav> 
       </header>
 
       <main>
@@ -85,10 +85,10 @@ function App() {
             <h1>Ansh Patel<br /><span>Web Developer</span></h1>
 
             <p className="hero-description">
-              I build modern, responsive and user-friendly web applications
-              using Laravel, React and modern web technologies.
+              Full Stack Developer specializing in Laravel, React and Next.js.
+              I build scalable web applications, REST APIs, admin dashboards
+              and seamless digital experiences.
             </p>
-
             <div className="hero-buttons">
               <a href="#projects" className="primary-btn">View Projects</a>
 
@@ -113,18 +113,19 @@ function App() {
         <section id="about" className="section">
           <p className="section-subtitle">ABOUT ME</p>
 
-          <h2>I'm a Web Developer focused on building real-world applications.</h2>
+          <h2>Full Stack Developer building scalable web applications.</h2>
 
           <p className="section-text">
-            I am a Web Developer with experience in building modern and scalable
-            web applications. I work mainly with Laravel, PHP, React, JavaScript
-            and MySQL.
+            I am a Full Stack Developer with professional experience in PHP,
+            Laravel, React, Next.js, JavaScript and MySQL. I specialize in
+            developing scalable backend systems, RESTful APIs, responsive
+            frontend applications and database-driven platforms.
           </p>
 
-          <p className="section-text">
-            I enjoy developing REST APIs, admin panels, authentication systems,
-            payment integrations and responsive user interfaces. My goal is to
-            create applications that are clean, secure, maintainable and easy to use.
+          <p className="section-text about-second">
+            I have worked on e-commerce platforms, payment gateway integrations,
+            admin dashboards, authentication systems, API integrations and
+            business-focused web applications.
           </p>
 
           <div className="about-stats">
@@ -139,7 +140,7 @@ function App() {
             </div>
 
             <div>
-              <strong>5+</strong>
+              <strong>8+</strong>
               <span>Technologies</span>
             </div>  
           </div>
@@ -218,22 +219,44 @@ function App() {
               </div>
 
               <div className="experience-content">
-                <h3>Full Stack Developer</h3>
-                <h4>
-                  <a href="https://ymcoders.in/" target="_blank" rel="noopener noreferrer">
+                <h3>Freelance Full Stack Developer</h3>
+
+                <h4><a href="https://ymcoders.in/" target="_blank" rel="noopener noreferrer">
                     YMCODERS Technologies Pvt. Ltd.
-                  </a>
-                </h4>
+                  </a></h4>
 
                 <p>
-                  Architecting dynamic web ecosystems and end-to-end applications using the modern PHP stack, React, and robust relational databases.
+                  Worked as a Freelance Full Stack Developer, building and maintaining
+                  modern web applications using Laravel, React, Next.js, PHP, and MySQL.
+                  Delivered scalable frontend interfaces, backend APIs, database-driven
+                  applications, and third-party service integrations.
                 </p>
 
                 <ul>
-                  <li>Engineered reusable React component libraries for sleek, client-facing interfaces.</li>
-                  <li>Designed and documented scalable, secure RESTful APIs leveraging Laravel frameworks.</li>
-                  <li>Optimized MySQL query performance to handle complex data aggregation workflows efficiently.</li>
-                  <li>Integrated complex third-party payment gateways and webhook notification microservices.</li>
+                  <li>
+                    Developed responsive and reusable user interfaces using React and
+                    Next.js for modern web applications.
+                  </li>
+
+                  <li>
+                    Built scalable RESTful APIs, backend services, authentication systems,
+                    and business logic using Laravel and PHP.
+                  </li>
+
+                  <li>
+                    Designed and optimized MySQL databases, queries, relationships, and
+                    data-driven application workflows.
+                  </li>
+
+                  <li>
+                    Integrated third-party APIs, payment gateways, webhooks, and external
+                    services into Laravel and React-based applications.
+                  </li>
+
+                  <li>
+                    Worked across the complete development lifecycle, from frontend
+                    development and API integration to backend development and deployment.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -304,46 +327,80 @@ function App() {
           <div className="services-grid">
 
             <div className="service-card">
-              <div className="service-number">01</div>
-
               <h3>Web Development</h3>
 
               <p>
-                Custom and responsive websites built with modern technologies
-                and clean development practices.
+                Custom, responsive and scalable web applications built with
+                modern technologies, clean architecture and maintainable code.
               </p>
             </div>
 
             <div className="service-card">
-              <div className="service-number">02</div>
-
               <h3>Laravel Development</h3>
 
               <p>
-                Scalable Laravel applications, REST APIs, authentication,
-                admin panels and database-driven systems.
+                Laravel applications, REST APIs, authentication systems,
+                admin dashboards, CRUD modules, database integration and
+                business logic development.
               </p>
             </div>
 
             <div className="service-card">
-              <div className="service-number">03</div>
-
-              <h3>React Development</h3>
+              <h3>React & Next.js Development</h3>
 
               <p>
-                Modern React interfaces with reusable components, API
-                integration and responsive layouts.
+                Modern and responsive frontend applications using React and
+                Next.js with reusable components, API integration and
+                optimized user experiences.
               </p>
             </div>
 
             <div className="service-card">
-              <div className="service-number">04</div>
-
-              <h3>API Integration</h3>
+              <h3>Payment Integration</h3>
 
               <p>
-                REST API development and integration with frontend applications,
-                payment gateways and third-party services.
+                Integration of secure payment gateways such as Razorpay,
+                PayPal and Stripe with checkout flows, webhooks, payment
+                verification and transaction handling.
+              </p>
+            </div>
+
+            <div className="service-card">
+              <h3>REST API Development</h3>
+
+              <p>
+                Secure and scalable REST APIs with authentication,
+                authorization, validation, database relationships and
+                seamless frontend integration.
+              </p>
+            </div>
+
+            <div className="service-card">
+              <h3>Bug Fixing & Troubleshooting</h3>
+
+              <p>
+                Debugging and resolving frontend, backend, API, database,
+                authentication and integration-related issues to improve
+                application stability and performance.
+              </p>
+            </div>
+
+            <div className="service-card">
+              <h3>Database & Performance Optimization</h3>
+
+              <p>
+                MySQL database optimization, query improvements, relationships,
+                indexing and backend performance tuning for faster applications.
+              </p>
+            </div>
+
+            <div className="service-card">
+              <h3>API & Third-Party Integration</h3>
+
+              <p>
+                Integration of third-party APIs, webhooks, external services,
+                authentication providers and business automation into existing
+                applications.
               </p>
             </div>
 
@@ -357,8 +414,7 @@ function App() {
           <div className="projects-grid">
 
             <div className="project-card">
-              <div className="project-number">01</div>
-
+              
               <h3>NGO Management System</h3>
 
               <p>
@@ -375,8 +431,7 @@ function App() {
             </div>
 
             <div className="project-card">
-              <div className="project-number">02</div>
-
+             
               <h3>E-Commerce Platform</h3>
 
               <p>
@@ -392,8 +447,7 @@ function App() {
             </div>
 
             <div className="project-card">
-              <div className="project-number">03</div>
-
+              
               <h3>REST API Application</h3>
 
               <p>

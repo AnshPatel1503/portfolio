@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+:root {
+  --bg: #070909;
+  --bg-soft: #0c1010;
+  --card: #101515;
+  --card-hover: #131a18;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-green: rgba(0, 255, 136, 0.35);
+  --text: #f4f7f6;
+  --muted: #8b9692;
+  --green: #00ff88;
+  --green-dark: #00c96b;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +21,45 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #0a0a0a;
-  color: #ffffff;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(0, 255, 136, 0.08),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 10% 30%,
+      rgba(0, 255, 136, 0.035),
+      transparent 25%
+    ),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.6;
 }
 
+body,
+button,
+input,
+textarea {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
 a {
   text-decoration: none;
   color: inherit;
 }
-
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+::selection {
+  background: var(--green);
+  color: #000;
+}
 .portfolio {
   min-height: 100vh;
 }
@@ -77,7 +118,7 @@ a {
 
 .hero {
   min-height: calc(100vh - 80px);
-  padding: 80px 7%;
+  padding: 30px 7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,7 +135,7 @@ a {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 .hero h1 {
@@ -185,7 +226,7 @@ a {
 
 .section h2 {
   font-size: clamp(35px, 5vw, 55px);
-  margin-bottom: 25px;
+ /* margin-bottom: 25px;*/
 }
 
 .section-text {
@@ -198,7 +239,7 @@ a {
 /* Skills */
 
 .skills-grid {
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -222,7 +263,7 @@ a {
 /* Projects */
 
 .projects-grid {
-  margin-top: 40px;
+/*  margin-top: 40px;*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -308,7 +349,7 @@ footer {
   }
 
   .section {
-    padding: 80px 5%;
+    padding: 40px 5%;
   }
 
   .hero h1 {
@@ -479,8 +520,8 @@ footer {
   display: grid;
   grid-template-columns: 180px 1fr;
   gap: 40px;
-  padding: 35px 0;
-  border-bottom: 1px solid #292929;
+ /* padding: 35px 0;*/
+  /*border-bottom: 1px solid #292929;*/
 }
 
 .experience-year {
@@ -491,7 +532,7 @@ footer {
 
 .experience-content h3 {
   font-size: 26px;
-  margin-bottom: 8px;
+  /*margin-bottom: 8px;*/
 }
 
 .experience-content h4 {
@@ -523,7 +564,7 @@ footer {
   }
 }
 .services-grid {
-  margin-top: 45px;
+ /* margin-top: 45px;*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -665,9 +706,9 @@ footer {
 .skill-bg-icon {
   position: absolute;
   margin-top: -20px;
-  font-size: 150px;  /* Bada size watermark look ke liye */
-  opacity: 0.06;     /* Halka translucent light effect */
-  color: white;    /* Background se match karta hua color */
-  pointer-events: none; /* Mouse interactions ko block karne ke liye */
+  font-size: 150px;  
+  opacity: 0.06;    
+  color: white;    
+  pointer-events: none;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
