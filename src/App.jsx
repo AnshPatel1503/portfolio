@@ -407,63 +407,166 @@ function App() {
           </div>
         </section>
         <section id="projects" className="section">
-          <p className="section-subtitle">MY WORK</p>
+  <p className="section-subtitle">MY WORK</p>
 
-          <h2>Featured Projects</h2>
+  <h2>Featured Projects</h2>
 
-          <div className="projects-grid">
+  <div className="projects-grid">
+ 
+    {/* Project 1: Combiz Solutions (SaaS CRM Platform) */}
+    <div className="project-card">
+      <h3>Combiz Solutions (Enterprise SaaS CRM)</h3>
+      <p>
+        Architected and customized a high-concurrency SaaS CRM platform built for international B2B commerce. 
+        Developed secure multi-tenant vendor panels, localized checkout engines with real-time tax mapping, 
+        and automated PDF dynamic invoicing services for global procurement workflows.
+      </p>
 
-            <div className="project-card">
-              
-              <h3>NGO Management System</h3>
+      <div className="project-tech">
+        <span>Perfex CRM</span>
+        <span>SaaS Architecture</span>
+        <span>PHP & MySQL</span>
+        <span>B2B E-Commerce</span>
+      </div>
 
-              <p>
-                Full-stack NGO management platform with admin dashboard,
-                project management, gallery, events, volunteers, donations
-                and contact management.
-              </p>
+      <div className="project-links" style={{ marginTop: '15px' }}>
+        <a href="https://combizsolutions.co.in/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '14px', fontWeight: 'bold', color: 'var(--primary-color, #0070f3)' }}>
+          Live Project →
+        </a>
+      </div>
+    </div>
+    {/* Project 1: Samrit Food (Next.js Platform) */}
+    <div className="project-card">
+      <h3>Samrit Food Creation & Development</h3>
+      <p>
+        Engineered a high-performance food consultancy and product development platform. Implemented 
+        an automated Nutrition Intelligence module for recipe micro-nutrient analysis and dynamic, 
+        packaging-ready AI nutrition fact label generation.
+      </p>
 
-              <div className="project-tech">
-                <span>Laravel</span>
-                <span>React</span>
-                <span>MySQL</span>
-              </div>
-            </div>
+      <div className="project-tech">
+        <span>Next.js</span>
+        <span>React</span>
+        <span>Tailwind CSS</span>
+        <span>REST API</span>
+      </div>
 
-            <div className="project-card">
-             
-              <h3>E-Commerce Platform</h3>
+      <div className="project-links" style={{ marginTop: '15px' }}>
+        <a href="https://samritfood.in/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '14px', fontWeight: 'bold', color: 'var(--primary-color, #0070f3)' }}>
+          Live Project →
+        </a>
+      </div>
+    </div>
 
-              <p>
-                Modern e-commerce application with authentication, product
-                management, shopping cart, orders and online payment integration.
-              </p>
+    {/* Project 2: MPPL Life (Laravel MLM System) */}
+    <div className="project-card">
+      <h3>MPPL - Ayurvedic Wellness & MLM Platform</h3>
+      <p>
+        Developed an end-to-end Multi-Level Marketing (MLM) and Ayurvedic wellness application. Built secure 
+        distributor registration portals, nested network tree structures, real-time commission tracking, 
+        and high-concurrency wallet ledger systems.
+      </p>
 
-              <div className="project-tech">
-                <span>Laravel</span>
-                <span>React</span>
-                <span>Razorpay</span>
-              </div>
-            </div>
+      <div className="project-tech">
+        <span>Laravel</span>
+        <span>MySQL</span>
+        <span>HTML5 & Bootstrap</span>
+        <span>jQuery & AJAX</span>
+      </div>
 
-            <div className="project-card">
-              
-              <h3>REST API Application</h3>
+      <div className="project-links" style={{ marginTop: '15px' }}>
+        <a href="https://www.mppl.life/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '14px', fontWeight: 'bold', color: 'var(--primary-color, #0070f3)' }}>
+          Live Project →
+        </a>
+      </div>
+    </div>
 
-              <p>
-                Secure REST API application with authentication, protected
-                routes, database relationships and frontend API integration.
-              </p>
+    {/* Project 3: E-Commerce Platform */}
+    <div className="project-card">
+      <h3>E-Commerce Enterprise App</h3>
+      <p>
+        Modern e-commerce architecture featuring multi-tenant administrative dashboard panels, centralized inventory 
+        management systems, multi-currency shopping cart operations, and encrypted checkout modules.
+      </p>
 
-              <div className="project-tech">
-                <span>Laravel</span>
-                <span>Sanctum</span>
-                <span>REST API</span>
-              </div>
-            </div>
+      <div className="project-tech">
+        <span>Laravel</span>
+        <span>React</span>
+        <span>Razorpay</span>
+        <span>MySQL</span>
+      </div>
+    </div>
+    {/* Project 3: Restro Genius (Laravel Customization & Bug Fixes) */}
+    <div className="project-card">
+      <h3>Restro Genius (SaaS Restaurant Wallet System)</h3>
+      <p>
+        Overhauled backend workflows by profiling query metrics and resolving architecture bottlenecks. 
+        Customized multi-tenant admin control panels, refactored subscription modules, and fixed complex 
+        bugs related to live restaurant wallet balances and transaction calculations.
+      </p>
 
-          </div>
-        </section>
+      <div className="project-tech">
+        <span>Laravel</span>
+        <span>Blade Engine</span>
+        <span>MySQL</span>
+        <span>Bug Fixing</span>
+      </div>
+
+      <div className="project-links" style={{ marginTop: '15px' }}>
+        <a href="https://restrogenius.co.in/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '14px', fontWeight: 'bold', color: 'var(--primary-color, #0070f3)' }}>
+          Live Project →
+        </a>
+      </div>
+    </div>
+
+    {/* Project 4: Tripgare (Laravel Flight Meta-Search System) */}
+    <div className="project-card">
+      <h3>Tripgare (Flight Booking & Travel Meta-Search)</h3>
+      <p>
+        Optimized and customized an online travel aggregator platform. Fixed major application routing, session 
+        handling, and asynchronous filter bugs while customizing dynamic flight search result algorithms 
+        to ensure zero-downtime performance.
+      </p>
+
+      <div className="project-tech">
+        <span>Laravel</span>
+        <span>Customization</span>
+        <span>jQuery & AJAX</span>
+        <span>API Debugging</span>
+      </div>
+
+      <div className="project-links" style={{ marginTop: '15px' }}>
+        <a href="https://tripgare.com/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '14px', fontWeight: 'bold', color: 'var(--primary-color, #0070f3)' }}>
+          Live Project →
+        </a>
+      </div>
+    </div>
+    {/* Project 3: StreetBuzz (Core PHP News Web App) */}
+    <div className="project-card">
+      <h3>StreetBuzz (Regional News & Media Portal)</h3>
+      <p>
+        Customized and scaled a native architecture real-time regional aggregator system. Optimized 
+        state-wise dynamic news sorting modules, customized trending hashtag algorithms, and refactored state fallbacks 
+        to track views and manage high-concurrency visitor traffic efficiently.
+      </p>
+
+      <div className="project-tech">
+        <span>Core PHP</span>
+        <span>Customization</span>
+        <span>JavaScript</span>
+        <span>MySQL</span>
+      </div>
+
+      <div className="project-links" style={{ marginTop: '15px' }}>
+        <a href="https://streetbuzz.co.in/newsapp/home" target="_blank" rel="noopener noreferrer" style={{ fontSize: '14px', fontWeight: 'bold', color: 'var(--primary-color, #0070f3)' }}>
+          Live Project →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
         <section id="contact" className="section contact-section">
           <p className="section-subtitle">CONTACT</p>
