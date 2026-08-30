@@ -637,13 +637,13 @@ function App() {
             </div>
           )}
         </section>
-        <section id="game-project" className="max-w-6xl mx-auto py-12 px-4">
+        {/*<section id="game-project" className="max-w-6xl mx-auto py-12 px-4">
           <h2 className="text-3xl font-extrabold text-center mb-8">Featured Core Project</h2>
           
-          {/* Game Component Injection Hook */}
+          
           <PokemonGame />
           
-        </section>
+        </section>*/}
         <section id="contact" className="section contact-section">
           <p className="section-subtitle">CONTACT</p>
 
