@@ -163,7 +163,7 @@ function App() {
             <h1>Ansh Patel<br /><span>Web Developer</span></h1>
 
             <p className="hero-description">
-              Full Stack Developer specializing in Laravel, React and Next.js.
+              Full Stack Developer specializing in Laravel, Codeigniter, React and Next.js.
               I build scalable web applications, REST APIs, admin dashboards
               and seamless digital experiences.
             </p>
