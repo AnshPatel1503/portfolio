@@ -4,6 +4,7 @@ import { SiPhp, SiLaravel, SiCodeigniter, SiNextdotjs, SiReact, SiJavascript, Si
 import { TbApi } from 'react-icons/tb';
 import { FaEye, FaChevronLeft, FaChevronRight, FaTimes } from 'react-icons/fa';
 import "./App.css";
+import PokemonGame from './components/PokemonGame';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -174,7 +175,7 @@ function App() {
             </div>
 
             <div className="social-links">
-              <a href="https://github.com/testerme888" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a href="https://github.com/AnshPatel1503" target="_blank" rel="noreferrer">GitHub ↗</a>
 
               <a href="https://www.linkedin.com/in/ansh-patel-070692216/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             </div>
@@ -484,159 +485,165 @@ function App() {
 
           </div>
         </section>
-<section id="projects" className="section">
-      <p className="section-subtitle">MY WORK</p>
-      <h2>Featured Projects</h2>
+        <section id="projects" className="section">
+          <p className="section-subtitle">MY WORK</p>
+          <h2>Featured Projects</h2>
 
-      <div className="projects-grid">
-        
-       
-
-        {/* Project 4: MPPL Life */}
-        <div className="project-card">
-          <h3>MPPL - Ayurvedic Wellness & MLM Platform</h3>
-          <p>
-            Developed an end-to-end Multi-Level Marketing (MLM) application. Built secure distributor registration 
-            portals, nested network tree structures, real-time commission tracking, and wallet systems.
-          </p>
-          <div className="project-tech">
-            <span>Laravel</span>
-            <span>MySQL</span>
-            <span>Bootstrap & jQuery</span>
-            <a href="https://mppl.life" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
-            <button onClick={() => openSlider('mppl')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
-          </div>
-        </div>
-        {/* Project 2: Samrit Food */}
-        <div className="project-card">
-          <h3>Samrit Food Creation & Development</h3>
-          <p>
-            Engineered a high-performance food consultancy platform. Implemented an automated Nutrition Intelligence 
-            module for recipe micro-nutrient analysis and dynamic packaging-ready AI nutrition fact labels.
-          </p>
-          <div className="project-tech">
-            <span>Next.js</span>
-            <span>Json</span>
-            <span>Tailwind CSS</span>
-            <a href="https://samritfood.in" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
-            <button onClick={() => openSlider('samrit')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
-          </div>
-        </div>
-           {/* Project 3: Perfex CRM */}
-        <div className="project-card">
-          <h3>Perfex CRM - Custom Module Development</h3>
-          <p>
-            Successfully customized and deployed 3 core modules within the CodeIgniter 3 architecture. Refactored 
-            backend business workflows, automated invoice generation PDF engines, and granular RBAC tasks.
-          </p>
-          <div className="project-tech">
-            <span>CodeIgniter 3</span>
-            <span>Perfex CRM</span>
-            <span>PHP & MySQL</span>
-            <span>Jquery</span>
-            <a href="https://perfexcrm.com" target="_blank" rel="noopener noreferrer" className="live-link-badge">Platform Link</a>
-            <button onClick={() => openSlider('perfex')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
-          </div>
-        </div>
-         {/* Project 1: Combiz Solutions */}
-        <div className="project-card">
-          <h3>Combiz Solutions (Enterprise SaaS CRM)</h3>
-          <p>
-            Architected and customized a high-concurrency SaaS CRM platform built for international B2B commerce. 
-            Developed secure multi-tenant vendor panels, localized checkout engines, and automated PDF invoicing.
-          </p>
-          <div className="project-tech">
-            <span>Perfex CRM</span>
-            <span>SaaS Architecture</span>
-            <span>PHP & MySQL</span>
-            <a href="https://combizsolutions.co.in" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
-            <button onClick={() => openSlider('combiz')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
-          </div>
-        </div>
-         {/* Project 1: Aurra Health Kart (New Dual-Gateway E-Commerce) */}
-        <div className="project-card">
-          <h3>Aurra Health Kart (E-Commerce Platform)</h3>
-          <p>
-            Developed an industry-grade wellness e-commerce ecosystem. Engineered hybrid dual-payment routing channels by 
-            fully integrating Razorpay API for seamless domestic UPI/Net-banking workflows and Stripe SDK to authorize secure international multi-currency transactions.
-          </p>
-          <div className="project-tech">
-            <span>Laravel</span>
-            <span>Razorpay & Stripe</span>
-            <span>MySQL</span>
-            <a href="https://aurved.in/" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
-            <button onClick={() => openSlider('aurra')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
-          </div>
-        </div>
-        {/* Project 5: StreetBuzz */}
-        <div className="project-card">
-          <h3>StreetBuzz (Regional News & Media Portal)</h3>
-          <p>
-            Customized and scaled a native architecture real-time regional aggregator system. Optimized state-wise 
-            dynamic news sorting modules and customized trending hashtag tracking filters.
-          </p>
-          <div className="project-tech">
-            <span>Core PHP</span>
-            <span>JavaScript</span>
-            <span>Customization</span>
-            <a href="https://streetbuzz.co.in" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
-            <button onClick={() => openSlider('streetbuzz')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
-          </div>
-        </div>
-       
-
-        {/* Project 6: Restro Genius */}
-        <div className="project-card">
-          <h3>Restro Genius (SaaS Restaurant Wallet)</h3>
-          <p>
-            Overhauled backend workflows by profiling query metrics. Customized multi-tenant admin control panels, 
-            refactored subscription modules, and fixed live restaurant wallet balance bugs.
-          </p>
-          <div className="project-tech">
-            <span>Laravel</span>
-            <span>Blade Engine</span>
-            <span>Customization</span>
-            <span>Bug Fixing</span>
-            <a href="https://restrogenius.co.in" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
-            <button onClick={() => openSlider('restro')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
-          </div>
-        </div>
-
-        {/* Project 7: Tripgare */}
-        <div className="project-card">
-          <h3>Tripgare (Flight Booking & Meta-Search)</h3>
-          <p>
-            Optimized and customized an online travel aggregator platform. Fixed major application routing, session 
-            handling, and dynamic flight search result algorithms to ensure zero-downtime.
-          </p>
-          <div className="project-tech">
-            <span>Laravel</span>
-            <span>jQuery & AJAX</span>
-            <span>Customization</span>
-            <a href="https://tripgare.com" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
-            <button onClick={() => openSlider('tripgare')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
-          </div>
-        </div>
-        
-      </div>
-
-      {/* Lightbox / Slider Modal */}
-      {isOpen && (
-        <div className="slider-modal-overlay" onClick={() => setIsOpen(false)}>
-          <div className="slider-modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="slider-close-btn" onClick={() => setIsOpen(false)}><FaTimes /></button>
+          <div className="projects-grid">
             
-            <button className="slider-arrow prev" onClick={prevSlide}><FaChevronLeft /></button>
-            <div className="slider-image-container">
-              <img src={currentImages[currentIndex]} alt={`Screenshot ${currentIndex + 1}`} className="slider-main-img" />
-              <div className="slider-counter">{currentIndex + 1} / {currentImages.length}</div>
-            </div>
-            <button className="slider-arrow next" onClick={nextSlide}><FaChevronRight /></button>
-          </div>
-        </div>
-      )}
-    </section>
+           
 
+            {/* Project 4: MPPL Life */}
+            <div className="project-card">
+              <h3>MPPL - Ayurvedic Wellness & MLM Platform</h3>
+              <p>
+                Developed an end-to-end Multi-Level Marketing (MLM) application. Built secure distributor registration 
+                portals, nested network tree structures, real-time commission tracking, and wallet systems.
+              </p>
+              <div className="project-tech">
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>Bootstrap & jQuery</span>
+                <a href="https://mppl.life" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
+                <button onClick={() => openSlider('mppl')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
+              </div>
+            </div>
+            {/* Project 2: Samrit Food */}
+            <div className="project-card">
+              <h3>Samrit Food Creation & Development</h3>
+              <p>
+                Engineered a high-performance food consultancy platform. Implemented an automated Nutrition Intelligence 
+                module for recipe micro-nutrient analysis and dynamic packaging-ready AI nutrition fact labels.
+              </p>
+              <div className="project-tech">
+                <span>Next.js</span>
+                <span>Json</span>
+                <span>Tailwind CSS</span>
+                <a href="https://samritfood.in" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
+                <button onClick={() => openSlider('samrit')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
+              </div>
+            </div>
+               {/* Project 3: Perfex CRM */}
+            <div className="project-card">
+              <h3>Perfex CRM - Custom Module Development</h3>
+              <p>
+                Successfully customized and deployed 3 core modules within the CodeIgniter 3 architecture. Refactored 
+                backend business workflows, automated invoice generation PDF engines, and granular RBAC tasks.
+              </p>
+              <div className="project-tech">
+                <span>CodeIgniter 3</span>
+                <span>Perfex CRM</span>
+                <span>PHP & MySQL</span>
+                <span>Jquery</span>
+                <a href="https://perfexcrm.com" target="_blank" rel="noopener noreferrer" className="live-link-badge">Platform Link</a>
+                <button onClick={() => openSlider('perfex')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
+              </div>
+            </div>
+             {/* Project 1: Combiz Solutions */}
+            <div className="project-card">
+              <h3>Combiz Solutions (Enterprise SaaS CRM)</h3>
+              <p>
+                Architected and customized a high-concurrency SaaS CRM platform built for international B2B commerce. 
+                Developed secure multi-tenant vendor panels, localized checkout engines, and automated PDF invoicing.
+              </p>
+              <div className="project-tech">
+                <span>Perfex CRM</span>
+                <span>SaaS Architecture</span>
+                <span>PHP & MySQL</span>
+                <a href="https://combizsolutions.co.in" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
+                <button onClick={() => openSlider('combiz')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
+              </div>
+            </div>
+             {/* Project 1: Aurra Health Kart (New Dual-Gateway E-Commerce) */}
+            <div className="project-card">
+              <h3>Aurra Health Kart (E-Commerce Platform)</h3>
+              <p>
+                Developed an industry-grade wellness e-commerce ecosystem. Engineered hybrid dual-payment routing channels by 
+                fully integrating Razorpay API for seamless domestic UPI/Net-banking workflows and Stripe SDK to authorize secure international multi-currency transactions.
+              </p>
+              <div className="project-tech">
+                <span>Laravel</span>
+                <span>Razorpay & Stripe</span>
+                <span>MySQL</span>
+                <a href="https://aurved.in/" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
+                <button onClick={() => openSlider('aurra')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
+              </div>
+            </div>
+            {/* Project 5: StreetBuzz */}
+            <div className="project-card">
+              <h3>StreetBuzz (Regional News & Media Portal)</h3>
+              <p>
+                Customized and scaled a native architecture real-time regional aggregator system. Optimized state-wise 
+                dynamic news sorting modules and customized trending hashtag tracking filters.
+              </p>
+              <div className="project-tech">
+                <span>Core PHP</span>
+                <span>JavaScript</span>
+                <span>Customization</span>
+                <a href="https://streetbuzz.co.in" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
+                <button onClick={() => openSlider('streetbuzz')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
+              </div>
+            </div>
+           
+
+            {/* Project 6: Restro Genius */}
+            <div className="project-card">
+              <h3>Restro Genius (SaaS Restaurant Wallet)</h3>
+              <p>
+                Overhauled backend workflows by profiling query metrics. Customized multi-tenant admin control panels, 
+                refactored subscription modules, and fixed live restaurant wallet balance bugs.
+              </p>
+              <div className="project-tech">
+                <span>Laravel</span>
+                <span>Blade Engine</span>
+                <span>Customization</span>
+                <span>Bug Fixing</span>
+                <a href="https://restrogenius.co.in" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
+                <button onClick={() => openSlider('restro')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
+              </div>
+            </div>
+
+            {/* Project 7: Tripgare */}
+            <div className="project-card">
+              <h3>Tripgare (Flight Booking & Meta-Search)</h3>
+              <p>
+                Optimized and customized an online travel aggregator platform. Fixed major application routing, session 
+                handling, and dynamic flight search result algorithms to ensure zero-downtime.
+              </p>
+              <div className="project-tech">
+                <span>Laravel</span>
+                <span>jQuery & AJAX</span>
+                <span>Customization</span>
+                <a href="https://tripgare.com" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
+                <button onClick={() => openSlider('tripgare')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
+              </div>
+            </div>
+            
+          </div>
+
+          {/* Lightbox / Slider Modal */}
+          {isOpen && (
+            <div className="slider-modal-overlay" onClick={() => setIsOpen(false)}>
+              <div className="slider-modal-content" onClick={(e) => e.stopPropagation()}>
+                <button className="slider-close-btn" onClick={() => setIsOpen(false)}><FaTimes /></button>
+                
+                <button className="slider-arrow prev" onClick={prevSlide}><FaChevronLeft /></button>
+                <div className="slider-image-container">
+                  <img src={currentImages[currentIndex]} alt={`Screenshot ${currentIndex + 1}`} className="slider-main-img" />
+                  <div className="slider-counter">{currentIndex + 1} / {currentImages.length}</div>
+                </div>
+                <button className="slider-arrow next" onClick={nextSlide}><FaChevronRight /></button>
+              </div>
+            </div>
+          )}
+        </section>
+        <section id="game-project" className="max-w-6xl mx-auto py-12 px-4">
+          <h2 className="text-3xl font-extrabold text-center mb-8">Featured Core Project</h2>
+          
+          {/* Game Component Injection Hook */}
+          <PokemonGame />
+          
+        </section>
         <section id="contact" className="section contact-section">
           <p className="section-subtitle">CONTACT</p>
 
