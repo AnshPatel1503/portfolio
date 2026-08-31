@@ -26,7 +26,7 @@ function App() {
       title: "NEON VOID AVOIDER",
       subtitle: "Canvas Physics Simulation",
       description: "Highly animated space avoider game integrating smooth LERP dampening speeds, circular particle tail-trails, and live crash audio nodes.",
-      tech: ["Canvas API", "LERP Framework", "Web Audio"],
+      tech: ["Canvas API", "LERP Physics", "Web Audio"],
       folderName: "neon-void",
       category: "Arcade Engine"
     },
@@ -35,7 +35,7 @@ function App() {
       title: "NEON EMERALD SUDOKU",
       subtitle: "Algorithm Performance Piece",
       description: "Futuristic multi-theme matrix sudoku engine deploying a dynamic recursive Backtracking DFS loop framework with live error highlights.",
-      tech: ["Vanilla JS", "DFS Algorithm", "CSS Custom Props"],
+      tech: ["Vanilla JS", "DFS Algorithm", "CSS Props"],
       folderName: "sudoku",
       category: "Math Logic"
     },
@@ -44,7 +44,7 @@ function App() {
       title: "TIC TAC TOE",
       subtitle: "Classic Turn Strategy",
       description: "Clean interactive dynamic matrix display system to track players alternating turn cycles and evaluating win vector conditions seamlessly.",
-      tech: ["HTML5", "CSS Grid", "Event Listeners"],
+      tech: ["HTML5", "CSS Grid", "Event Handles"],
       folderName: "tic-tac-toe",
       category: "Casual Game"
     },
@@ -53,7 +53,7 @@ function App() {
       title: "JS BRICK BREAKER",
       subtitle: "2D Vector Physics Grid",
       description: "Retro breakthrough canvas module calculating geometric reflective wall collision values, paddle drag thresholds, and instant score counters.",
-      tech: ["Vector Math", "Canvas Rendering", "Frame Loops"],
+      tech: ["Vector Math", "Canvas Loop", "Collision"],
       folderName: "js-brick-breaker",
       category: "Retro Action"
     },
@@ -71,12 +71,11 @@ function App() {
       title: "CYBERPUNK MINESWEEPER",
       subtitle: "Recursive Terminal Script",
       description: "Secure data grid system operating recursive Flood-Fill sweep macros to chain-reveal empty coordinates without trigger-dead clicks.",
-      tech: ["Flood-Fill Matrix", "Recursion", "DOM Injection"],
+      tech: ["Flood-Fill", "Recursion", "DOM Control"],
       folderName: "minesweeper",
       category: "Data Security"
     }
   ];
-
   // Real-world project screenshots mapping
   const projectScreenshots = {
     aurra: [
@@ -693,61 +692,104 @@ function App() {
             </div>
           )}
         </section>
-         <section id="arcade-terminal" className="py-24 bg-slate-950 border-t border-slate-900/50">
-        <div className="max-w-6xl mx-auto px-6">
+         {/* 🕹️ ARCADE GAMES SECTION PANEL (PURE CSS OVERRIDE ENGINE) */}
+      <section style={{ padding: '80px 24px', backgroundColor: '#020617', borderTop: '1px solid #0f172a' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           
-          {/* Section Typography Headers */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-extrabold font-mono tracking-wider text-cyan-400 flex items-center gap-2">
-              <span className="text-pink-500 animate-pulse">&gt;</span> // ARCADE_GAMING_TERMINAL
+          {/* Section Section Headers */}
+          <div style={{ marginBottom: '40px' }}>
+            <h2 style={{ fontFamily: "'Orbitron', 'Courier New', monospace", fontSize: '28px', fontWeight: '800', letterSpacing: '2px', color: '#22d3ee', margin: '0 0 8px 0' }}>
+              <span style={{ color: '#ec4899', marginRight: '6px' }}>&gt;</span> // ARCADE_GAMING_TERMINAL
             </h2>
-            <p className="text-slate-400 text-sm font-mono mt-1">
-              Production modules served standalone via local secure static origins.
+            <p style={{ fontFamily: "'Orbitron', monospace", color: '#64748b', fontSize: '12px', margin: '0' }}>
+              Production modules served standalone via secure static public subdirectories.
             </p>
           </div>
 
-          {/* Cards Interface Responsive Grid Framework Mapping */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Cards Dynamic Grid CSS Styles mapping */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '24px' }}>
             {portfolioGames.map((game) => (
               <div 
                 key={game.id} 
-                className="group border border-slate-800/80 bg-slate-900/30 p-6 rounded-2xl hover:border-cyan-500/40 hover:bg-slate-900/60 transition-all duration-300 backdrop-blur-md flex flex-col justify-between shadow-lg shadow-black/40 hover:shadow-cyan-950/10"
+                style={{
+                  border: '1px solid #1e293b',
+                  backgroundColor: 'rgba(15, 23, 42, 0.4)',
+                  padding: '24px',
+                  borderRadius: '16px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justify-content: 'space-between',
+                  boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.5)',
+                  backdropFilter: 'blur(10px)',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#22d3ee';
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = '#1e293b';
+                  e.currentTarget.style.transform = 'translateY(0px)';
+                }}
               >
                 <div>
-                  <div className="flex justify-between items-start">
-                    <span className="text-[10px] font-mono font-bold text-pink-500 bg-pink-950/20 px-2.5 py-0.5 rounded-full uppercase tracking-widest border border-pink-900/30">
-                      {game.category}
-                    </span>
-                  </div>
+                  <span style={{ fontFamily: "'Orbitron', monospace", fontSize: '10px', fontWeight: 'bold', color: '#f43f5e', backgroundColor: 'rgba(244, 63, 94, 0.1)', padding: '3px 10px', borderRadius: '20px', letterSpacing: '1px', border: '1px solid rgba(244, 63, 94, 0.2)' }}>
+                    {game.category}
+                  </span>
                   
-                  <h3 className="text-xl font-bold font-mono mt-3 text-slate-100 tracking-wide group-hover:text-cyan-400 transition-colors duration-200">
+                  <h3 style={{ fontFamily: "'Orbitron', sans-serif", fontSize: '20px', fontWeight: '700', color: '#f8fafc', letterSpacing: '1px', marginTop: '16px', marginBottom: '2px' }}>
                     {game.title}
                   </h3>
-                  <p className="text-xs text-cyan-500 font-mono mb-3">{game.subtitle}</p>
-                  <p className="text-slate-400 text-xs leading-relaxed mb-6 font-sans">
+                  <p style={{ fontFamily: "'Orbitron', monospace", fontSize: '11px', color: '#06b6d4', margin: '0 0 12px 0' }}>
+                    {game.subtitle}
+                  </p>
+                  <p style={{ fontSize: '13px', color: '#94a3b8', lineHeight: '1.6', margin: '0 0 24px 0', fontFamily: 'sans-serif' }}>
                     {game.description}
                   </p>
                 </div>
                 
                 <div>
-                  {/* Tech Badges Row */}
-                  <div className="flex flex-wrap gap-1.5 mb-5">
+                  {/* Technology Badges Matrix Row */}
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '20px' }}>
                     {game.tech.map((t, i) => (
                       <span 
                         key={i} 
-                        className="text-[10px] bg-slate-950/60 px-2.5 py-0.5 rounded-md text-slate-400 border border-slate-800 font-mono"
+                        style={{ fontFamily: "monospace", fontSize: '10px', backgroundColor: '#020617', padding: '4px 10px', borderRadius: '6px', color: '#94a3b8', border: '1px solid #1e293b' }}
                       >
                         {t}
                       </span>
                     ))}
                   </div>
                   
-                  {/* --- FIX: CLEAN DIRECTORY EXTENSIONLESS URL TARGETS --- */}
+                  {/* Clean Navigation Redirect Anchor Route link referencing folder names */}
                   <a 
                     href={`${import.meta.env.BASE_URL}games/${game.folderName}/`} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="block w-full text-center py-2.5 rounded-xl bg-transparent border border-cyan-500/30 text-cyan-400 font-mono font-bold text-xs tracking-wider transition-all duration-200 hover:bg-cyan-500 hover:text-black hover:border-cyan-500 hover:shadow-lg hover:shadow-cyan-500/10"
+                    style={{
+                      display: 'block',
+                      width: '100%',
+                      textAlign: 'center',
+                      padding: '10px 0',
+                      borderRadius: '12px',
+                      backgroundColor: 'transparent',
+                      border: '1px solid #06b6d4',
+                      color: '#06b6d4',
+                      fontFamily: "'Orbitron', monospace",
+                      fontWeight: '700',
+                      fontSize: '12px',
+                      letterSpacing: '1px',
+                      textDecoration: 'none',
+                      transition: 'all 0.2s ease-in-out'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.target.style.backgroundColor = '#06b6d4';
+                      e.target.style.color = '#020617';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.backgroundColor = 'transparent';
+                      e.target.style.color = '#06b6d4';
+                    }}
                   >
                     DEPLOY ENGINE
                   </a>
