@@ -177,14 +177,14 @@ function App() {
             <div className="social-links">
               <a href="https://github.com/AnshPatel1503" target="_blank" rel="noreferrer">GitHub ↗</a>
 
-              <a href="https://www.linkedin.com/in/ansh-patel-070692216/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a href="https://www.linkedin.com/in/anshpatel-dev/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             </div>
           </div>
 
           <div className="hero-card">
             <div className="profile-wrapper">
               <div className="profile-glow"></div>
-              <img src="./profile.png" alt="Ansh Patel" className="profile-image"/>
+              <img src="./profile.png" alt="Ansh Patel Portfolio - Full Stack Web Developer" className="profile-image"/>
             </div>
           </div>
         </section>
@@ -670,7 +670,7 @@ function App() {
 
           <div>
             <span>LinkedIn</span>
-            <a href="https://www.linkedin.com/in/ansh-patel-070692216/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+            <a href="https://www.linkedin.com/in/anshpatel-dev" target="_blank" rel="noreferrer">LinkedIn Profile</a>
           </div>
         </div>
           <form className="contact-form" onSubmit={handleSubmit}>
