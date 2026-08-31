@@ -658,7 +658,7 @@ footer {
   }
 }
 .contact-details {
-  max-width: 850px;
+  /*max-width: 850px;*/
   margin: 40px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
