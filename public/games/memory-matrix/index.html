@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Matrix — Portfolio Arcade</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Arcade Header -->
+        <header>
+            <h1 class="neon-text">MEMORY MATRIX</h1>
+            <p class="subtitle">Sync The Neural Pattern</p>
+        </header>
+
+        <!-- Dynamic Counter Display Panels -->
+        <div class="controls-panel">
+            <div class="meta-info">
+                <div class="status-indicator">
+                    <span class="label">STAGE:</span>
+                    <span id="level-count" class="neon-stat">0</span>
+                </div>
+                <div class="status-indicator">
+                    <span class="label">BEST STREAK:</span>
+                    <span id="high-score" class="neon-stat">0</span>
+                </div>
+            </div>
+            <button id="start-btn" class="btn btn-primary">INITIALIZE</button>
+        </div>
+
+        <!-- Matrix Grid Layout Canvas -->
+        <div class="game-wrapper">
+            <div id="matrix-grid" class="matrix-grid">
+                <!-- 3x3 interactive network matrix -->
+                <div class="pad-node" data-id="0"></div>
+                <div class="pad-node" data-id="1"></div>
+                <div class="pad-node" data-id="2"></div>
+                <div class="pad-node" data-id="3"></div>
+                <div class="pad-node" data-id="4"></div>
+                <div class="pad-node" data-id="5"></div>
+                <div class="pad-node" data-id="6"></div>
+                <div class="pad-node" data-id="7"></div>
+                <div class="pad-node" data-id="8"></div>
+            </div>
+        </div>
+
+        <!-- Terminal Status Information Bar -->
+        <div class="terminal-footer">
+            <p id="status-text">// TERMINAL IDLE. PRESS INITIALIZE TO LAUNCH RUN.</p>
+        </div>
+    </div>
+
+    <script src="script1.js" defer></script>
+</body>
+</html>

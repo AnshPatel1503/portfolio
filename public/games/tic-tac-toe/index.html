@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Portfolio Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Tic Tac Toe</h1>
+    
+    <div class="controls">
+        <select id="difficulty">
+            <option value="easy">Easy AI</option>
+            <option value="medium">Medium AI</option>
+            <option value="hard" selected>Hard AI</option>
+        </select>
+
+        <select id="theme">
+            <option value="default">Neon Theme</option>
+            <option value="cyberpunk">Cyberpunk</option>
+            <option value="emerald">Emerald</option>
+        </select>
+    </div>
+
+    <div class="scoreboard">
+        <div class="score-box">Player (X)<span id="score-x">0</span></div>
+        <div class="score-box">Streak<span id="streak-val" style="color: #ffd700;">0🔥</span></div>
+        <div class="score-box">AI (O)<span id="score-o">0</span></div>
+    </div>
+
+    <div class="board" id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <div class="status" id="status">Your Turn (X)</div>
+    <button class="btn" id="reset-btn">Reset Match</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
