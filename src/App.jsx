@@ -650,7 +650,8 @@ function App() {
           <h2>Let's Work Together</h2>
 
           <p className="section-text">
-            Have a project, job opportunity or collaboration in mind?
+            I'm available for freelance projects, full-time opportunities and web development collaborations. Whether you need a new application,
+            API integration, payment gateway or help fixing an existing project, let's discuss your requirements. Have a project, job opportunity or collaboration in mind?
             Send me a message.
           </p>
           <div className="contact-details">
@@ -658,10 +659,13 @@ function App() {
             <span>Email</span>
             <a href="mailto:anantansh1503@gmail.com">anantansh1503@gmail.com</a>
           </div>
-
+          <div>
+            <span>WhatsApp</span>
+            <a href="https://wa.me/910648014746?text=Hello%20Ansh,%20I%20would%20like%20to%20discuss%20a%20project%20with%20you." target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+          </div>
           <div>
             <span>GitHub</span>
-            <a href="https://github.com/testerme888" target="_blank" rel="noreferrer">github.com/testerme888</a>
+            <a href="https://github.com/AnshPatel1503" target="_blank" rel="noreferrer">github.com/AnshPatel1503</a>
           </div>
 
           <div>
