@@ -20,6 +20,62 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const portfolioGames = [
+    {
+      id: "g1",
+      title: "NEON VOID AVOIDER",
+      subtitle: "Canvas Physics Simulation",
+      description: "Highly animated space avoider game integrating smooth LERP dampening speeds, circular particle tail-trails, and live crash audio nodes.",
+      tech: ["Canvas API", "LERP Framework", "Web Audio"],
+      folderName: "neon-void",
+      category: "Arcade Engine"
+    },
+    {
+      id: "g2",
+      title: "NEON EMERALD SUDOKU",
+      subtitle: "Algorithm Performance Piece",
+      description: "Futuristic multi-theme matrix sudoku engine deploying a dynamic recursive Backtracking DFS loop framework with live error highlights.",
+      tech: ["Vanilla JS", "DFS Algorithm", "CSS Custom Props"],
+      folderName: "sudoku",
+      category: "Math Logic"
+    },
+    {
+      id: "g3",
+      title: "TIC TAC TOE",
+      subtitle: "Classic Turn Strategy",
+      description: "Clean interactive dynamic matrix display system to track players alternating turn cycles and evaluating win vector conditions seamlessly.",
+      tech: ["HTML5", "CSS Grid", "Event Listeners"],
+      folderName: "tic-tac-toe",
+      category: "Casual Game"
+    },
+    {
+      id: "g4",
+      title: "JS BRICK BREAKER",
+      subtitle: "2D Vector Physics Grid",
+      description: "Retro breakthrough canvas module calculating geometric reflective wall collision values, paddle drag thresholds, and instant score counters.",
+      tech: ["Vector Math", "Canvas Rendering", "Frame Loops"],
+      folderName: "js-brick-breaker",
+      category: "Retro Action"
+    },
+    {
+      id: "g5",
+      title: "MEMORY MATRIX",
+      subtitle: "Asynchronous Timing Run",
+      description: "A premium Simon Says extension handling sequence tracking chains via unified Promise await triggers and high score local cache sync.",
+      tech: ["JS Promises", "Async/Await", "Local Storage"],
+      folderName: "memory-matrix",
+      category: "Neural Test"
+    },
+    {
+      id: "g6",
+      title: "CYBERPUNK MINESWEEPER",
+      subtitle: "Recursive Terminal Script",
+      description: "Secure data grid system operating recursive Flood-Fill sweep macros to chain-reveal empty coordinates without trigger-dead clicks.",
+      tech: ["Flood-Fill Matrix", "Recursion", "DOM Injection"],
+      folderName: "minesweeper",
+      category: "Data Security"
+    }
+  ];
 
   // Real-world project screenshots mapping
   const projectScreenshots = {
@@ -637,6 +693,71 @@ function App() {
             </div>
           )}
         </section>
+         <section id="arcade-terminal" className="py-24 bg-slate-950 border-t border-slate-900/50">
+        <div className="max-w-6xl mx-auto px-6">
+          
+          {/* Section Typography Headers */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-extrabold font-mono tracking-wider text-cyan-400 flex items-center gap-2">
+              <span className="text-pink-500 animate-pulse">&gt;</span> // ARCADE_GAMING_TERMINAL
+            </h2>
+            <p className="text-slate-400 text-sm font-mono mt-1">
+              Production modules served standalone via local secure static origins.
+            </p>
+          </div>
+
+          {/* Cards Interface Responsive Grid Framework Mapping */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {portfolioGames.map((game) => (
+              <div 
+                key={game.id} 
+                className="group border border-slate-800/80 bg-slate-900/30 p-6 rounded-2xl hover:border-cyan-500/40 hover:bg-slate-900/60 transition-all duration-300 backdrop-blur-md flex flex-col justify-between shadow-lg shadow-black/40 hover:shadow-cyan-950/10"
+              >
+                <div>
+                  <div className="flex justify-between items-start">
+                    <span className="text-[10px] font-mono font-bold text-pink-500 bg-pink-950/20 px-2.5 py-0.5 rounded-full uppercase tracking-widest border border-pink-900/30">
+                      {game.category}
+                    </span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold font-mono mt-3 text-slate-100 tracking-wide group-hover:text-cyan-400 transition-colors duration-200">
+                    {game.title}
+                  </h3>
+                  <p className="text-xs text-cyan-500 font-mono mb-3">{game.subtitle}</p>
+                  <p className="text-slate-400 text-xs leading-relaxed mb-6 font-sans">
+                    {game.description}
+                  </p>
+                </div>
+                
+                <div>
+                  {/* Tech Badges Row */}
+                  <div className="flex flex-wrap gap-1.5 mb-5">
+                    {game.tech.map((t, i) => (
+                      <span 
+                        key={i} 
+                        className="text-[10px] bg-slate-950/60 px-2.5 py-0.5 rounded-md text-slate-400 border border-slate-800 font-mono"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  {/* --- FIX: CLEAN DIRECTORY EXTENSIONLESS URL TARGETS --- */}
+                  <a 
+                    href={`${import.meta.env.BASE_URL}games/${game.folderName}/`} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block w-full text-center py-2.5 rounded-xl bg-transparent border border-cyan-500/30 text-cyan-400 font-mono font-bold text-xs tracking-wider transition-all duration-200 hover:bg-cyan-500 hover:text-black hover:border-cyan-500 hover:shadow-lg hover:shadow-cyan-500/10"
+                  >
+                    DEPLOY ENGINE
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
         {/*<section id="game-project" className="max-w-6xl mx-auto py-12 px-4">
           <h2 className="text-3xl font-extrabold text-center mb-8">Featured Core Project</h2>
           
