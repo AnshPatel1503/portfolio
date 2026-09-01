@@ -20,6 +20,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  
   const portfolioGames = [
     {
       id: "g1",
