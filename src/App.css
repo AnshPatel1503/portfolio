@@ -866,7 +866,7 @@ footer {
 }
 .arcade-section {
   padding: 20px 24px;
-  background-color: #020617;
+ /* background-color: #020617;*/
   border-top: 1px solid #0f172a;
 }
 
@@ -1021,4 +1021,166 @@ footer {
   background-color: #06b6d4;
   color: #020617;
   box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+}
+/* एजुकेशन सेक्शन कंटेनर */
+.edu-section {
+  padding: 80px 20px;
+  
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  text-align: center;
+}
+
+.edu-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ऊपर का छोटा पिल बैज */
+.edu-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #eef2ff;
+  border: 1px solid #e0e7ff;
+  color: #4f46e5;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* मुख्य हेडिंग्स */
+.edu-heading {
+  font-size: 42px;
+  font-weight: 800;
+  
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.edu-subtitle {
+  font-size: 16px;
+  
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+}
+
+/* 4-कॉलम रेस्पॉन्सिव ग्रिड लेआउट */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 15fr);
+  gap: 24px;
+}
+
+/* सिंगल कार्ड स्टाइल */
+.edu-card {
+  position: relative;
+  
+  border: 1px solid #f1f5f9;
+  border-radius: 24px;
+  padding: 32px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.1), 0 8px 10px -6px rgba(79, 70, 229, 0.05);
+  border-color: #e2e8f0;
+}
+
+/* ऑरेंज "IN PROGRESS / LATEST" बैज */
+.edu-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #f97316;
+
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  letter-spacing: 0.5px;
+}
+
+/* पर्पल गोल आइकॉन सर्किल */
+.edu-icon-circle {
+  width: 64px;
+  height: 64px;
+  background-color: #4f46e5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover .edu-icon-circle {
+  transform: scale(1.1);
+}
+
+.edu-icon-circle svg {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+}
+
+/* कार्ड टेक्स्ट डिटेल्स */
+.edu-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edu-title {
+  font-size: 32px;
+  font-weight: 900;
+  
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.edu-sub {
+  font-size: 14px;
+  font-weight: 700;
+ 
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* बॉटम छोटा विवरण */
+.edu-details {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 500;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f8fafc;
+  width: 100%;
+}
+
+/* मोबाइल और टैबलेट के लिए रेस्पॉन्सिव मीडिया क्वेरीज़ */
+@media (max-width: 1024px) {
+  .edu-grid {
+    grid-template-columns: repeat(2, 1fr); /* टैबलेट पर 2 कॉलम */
+  }
+}
+
+@media (max-width: 640px) {
+  .edu-grid {
+    grid-template-columns: 1fr; /* मोबाइल पर 1 कॉलम */
+  }
+  .edu-heading {
+    font-size: 32px;
+  }
 }
