@@ -53,12 +53,12 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="px-[2%] py-12 border-t border-neutral-900 text-white">
+    <section id="experience" className="px-[2%] py-6 border-t border-neutral-900 text-white">
       <p className="text-emerald-400 text-sm font-bold tracking-[3px] uppercase">
         EXPERIENCE
       </p>
 
-      <h2 className="text-[clamp(28px,4vw,35px)] font-bold mt-3 mb-8">
+      <h2 className="text-[clamp(28px,4vw,35px)] font-bold mt-1 mb-4">
         My Professional Journey
       </h2>
 
@@ -68,7 +68,7 @@ const Experience = () => {
           /* .experience-item (Responsive Grid Layout: 180px 1fr on Desktop, 1fr on Mobile) */
           <div 
             key={item.id} 
-            className="grid grid-cols-1 [minmax(0,1fr)] min-[651px]:grid-cols-[180px_1fr] gap-4 min-[651px]:gap-10 border-b border-neutral-900/50 pb-8 last:border-b-0"
+            className="grid grid-cols-1 [minmax(0,1fr)] min-[651px]:grid-cols-[180px_1fr] gap-4 min-[651px]:gap-10 border-b border-neutral-900/50 pb-4 last:border-b-0"
           >
             {/* .experience-year */}
             <div className="text-emerald-400 text-sm font-semibold tracking-wide">
@@ -83,7 +83,7 @@ const Experience = () => {
               </h3>
 
               {/* Company Hyperlink Subtitle */}
-              <h4 className="text-neutral-400 text-[15px] font-normal mb-5">
+              <h4 className="text-neutral-400 text-[15px] font-normal mb-2">
                 <a 
                   href={item.companyUrl} 
                   target="_blank" 
@@ -95,7 +95,7 @@ const Experience = () => {
               </h4>
 
               {/* Job Description Paragraph */}
-              <p className="text-neutral-400 text-base leading-[1.7] mb-5 font-normal">
+              <p className="text-neutral-400 text-base leading-[1.7] mb-2 font-normal">
                 {item.description}
               </p>
 

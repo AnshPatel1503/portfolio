@@ -47,12 +47,12 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="px-[2%] py-12 border-t border-neutral-900 text-white justify-items-center text-center">
+    <section id="services" className="px-[2%] py-6 border-t border-neutral-900 text-white justify-items-center text-center">
       <p className="text-emerald-400 text-sm font-bold tracking-[3px] uppercase">
         WHAT I DO
       </p>
 
-      <h2 className="text-[clamp(28px,4vw,35px)] font-bold mt-3 mb-8">
+      <h2 className="text-[clamp(28px,4vw,35px)] font-bold mt-1 mb-4">
         Services I Can Provide
       </h2>
 

@@ -27,9 +27,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="px-[2%] py-12 border-t border-neutral-900 text-center text-white">
+    <section id="contact" className="px-[2%] py-6 border-t border-neutral-900 text-center text-white">
       <p className="text-emerald-400 text-sm font-bold tracking-[3px] uppercase">CONTACT</p>
-      <h2 className="text-[clamp(28px,4vw,35px)] font-bold mt-3 mb-4">Let's Work Together</h2>
+      <h2 className="text-[clamp(28px,4vw,35px)] font-bold mt-1 mb-4">Let's Work Together</h2>
       
       <p className="text-neutral-400 text-base leading-[1.8] max-w-[850px] mx-auto mb-[30px]">
         I'm available for freelance projects, full-time opportunities and web development collaborations. 

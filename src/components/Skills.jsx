@@ -71,12 +71,12 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="px-[2%] py-12 border-t border-neutral-900 text-white justify-items-center text-center">
+    <section id="skills" className="px-[2%] py-6 border-t border-neutral-900 text-white justify-items-center text-center">
       <p className="text-emerald-400 text-sm font-bold tracking-[3px] uppercase text-center md:text-left">
         MY SKILLS
       </p>
 
-      <h2 className="text-[clamp(28px,4vw,35px)] font-bold mt-3 mb-8 text-center md:text-left">
+      <h2 className="text-[clamp(28px,4vw,35px)] font-bold mt-1 mb-4 text-center md:text-left">
         Technologies I Work With
       </h2>
 

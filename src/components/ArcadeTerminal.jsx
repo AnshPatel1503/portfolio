@@ -184,7 +184,7 @@ const ArcadeTerminal = () => {
     { id: "g6", title: "CYBERPUNK MINESWEEPER", subtitle: "Recursive Terminal Script", description: "Secure data grid system operating recursive Flood-Fill sweep macros to chain-reveal empty coordinates without trigger-dead clicks.", tech: ["Flood-Fill", "Recursion", "DOM Control"], folderName: "minesweeper", category: "Data Security" }
   ];
 return ( 
-  <section className="px-[2%] py-12 border-t border-[#0f172a] text-white w-full block clear-both relative">
+  <section className="px-[2%] py-6 border-t border-[#0f172a] text-white w-full block clear-both relative">
     <div className="mx-auto w-full">
       
       {/* Header Layout */}

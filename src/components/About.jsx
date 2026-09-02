@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="px-[2%] py-12 border-t border-neutral-900 text-white">
+    <section id="about" className="px-[2%] py-6 border-t border-neutral-900 text-white">
       <p className="text-emerald-400 text-sm font-bold tracking-[3px] uppercase justify-items-center text-center">
         ABOUT ME
       </p>
@@ -28,7 +28,7 @@ const About = () => {
       </div>
 
       {/* Stats Counter Row */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-10 pt-8 justify-items-center text-center mx-auto max-w-2xl">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-2 justify-items-center text-center mx-auto max-w-2xl">
         <div className="flex flex-col gap-1">
           <strong className="text-3xl md:text-4xl font-extrabold text-emerald-400">2+</strong>
           <span className="text-neutral-400 text-sm font-medium">Years Experience</span>

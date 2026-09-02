@@ -54,7 +54,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="px-[2%] py-12 border-t border-neutral-900 font-sans text-center text-white">
+    <section id="education" className="px-[2%] py-6 border-t border-neutral-900 font-sans text-center text-white">
       <div className="w-full mx-auto">
         
         {/* .edu-pill (Indigo small top pill) */}
@@ -66,7 +66,7 @@ const Education = () => {
         </div>
 
        
-        <p className="text-neutral-400 text-base max-w-[600px] mx-auto mb-10">
+        <p className="text-neutral-400 text-base max-w-[600px] mx-auto mb-4">
           My educational journey and academic achievements
         </p>
 
