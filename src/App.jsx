@@ -276,9 +276,11 @@ function App() {
       
     ],
     combiz: [
-      "https://placehold.co",
-      "https://placehold.co",
-      "https://placehold.co"
+       "immiforms1.png",
+      "immiforms2.png",
+      "immiforms3.png",
+      "immiforms5.png",
+      "immiforms4.png"
     ],
     samrit: [
       "samrit1.png",
@@ -290,8 +292,14 @@ function App() {
       "samrit7.png"      
     ],
     perfex: [
-      "https://placehold.co",
-      "https://placehold.co"
+      "perfexcrm1.png",
+      "perfexcrm2.png",
+      "perfexcrm3.png",
+      "perfexcrm4.png",
+      "perfexcrm5.png",
+      "perfexcrm6.png",
+      "perfexcrm7.png",
+      "perfexcrm8.png"
     ],
     mppl: [
       "mppl0.png",
@@ -321,6 +329,13 @@ function App() {
       "Tripgare2.png",
       "Tripgare3.png",
       "Tripgare4.png"
+    ],
+    immiforms: [
+      "immiforms1.png",
+      "immiforms2.png",
+      "immiforms3.png",
+      "immiforms4.png",
+      "immiforms5.png"
     ]
   };
 
@@ -641,6 +656,46 @@ function App() {
             </div>
           </div>
         </section>
+         <section id="education" className="edu-section section">
+      <div className="edu-container">
+        
+        {/* मिनी पिल बैज */}
+        <div className="edu-pill">
+          <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" style={{width: '14px', height: '14px'}}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.425-4.761 1.146 1.146 0 0 1 1.931-1.28c.67.974 1.352 1.97 2.029 2.975m11.522 3.066a50.619 50.619 0 0 1 2.426-4.761 1.146 1.146 0 0 0-1.93-1.28c-.67.974-1.352 1.97-2.03 2.975m-12.113 0a48.654 48.654 0 0 1 14.086 0m-14.086 0A49.54 49.54 0 0 1 12 11.25c2.597 0 5.117-.196 7.574-.573m0 0V5.25" />
+          </svg>
+          Education
+        </div>
+
+        {/* टाइटल और सबटाइटल */}
+        
+        <p className="edu-subtitle">My educational journey and academic achievements</p>
+
+        {/* ग्रिड रैपर */}
+        <div className="edu-grid">
+          {educationData.map((item) => (
+            <div key={item.id} className="edu-card">
+              
+              {/* ऑरेंज बैज */}
+              {item.badge && <span className="edu-badge">{item.badge}</span>}
+
+              {/* आइकॉन सर्कल */}
+              <div className="edu-icon-circle">{item.icon}</div>
+
+              {/* टाइटल / सबटाइटल */}
+              <div className="edu-content">
+                <h3 className="edu-title">{item.title}</h3>
+                <h4 className="edu-sub">{item.subtitle}</h4>
+              </div>
+
+              {/* बॉटम छोटा टेक्स्ट */}
+              <p className="edu-details">{item.details}</p>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
         <section id="services" className="section">
           <p className="section-subtitle">WHAT I DO</p>
 
@@ -792,7 +847,7 @@ function App() {
               <div className="project-tech">
                 <span>Perfex CRM</span>
                 <span>SaaS Architecture</span>
-                <span>PHP & MySQL</span>
+                <span>Codeigniter 3 & PHP & MySQL</span>
                 <a href="https://combizsolutions.co.in" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
                 <button onClick={() => openSlider('combiz')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
               </div>
@@ -859,6 +914,22 @@ function App() {
                 <span>Customization</span>
                 <a href="https://tripgare.com" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
                 <button onClick={() => openSlider('tripgare')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
+              </div>
+            </div>
+          {/* Project 7: Tripgare */}
+            <div className="project-card">
+              <h3>IMMIMATE AI (Enterprise SaaS CRM)</h3>
+              <p>
+                Architected and customized a high-concurrency SaaS CRM platform built for international B2B commerce. 
+                Developed secure multi-tenant vendor panels, localized checkout engines, and automated PDF invoicing.
+              </p>
+              <div className="project-tech">
+                <span>Perfex CRM</span>
+                <span>SaaS Architecture</span>
+                <span>Codeigniter 3 & PHP & MySQL</span>
+                <span>Customization</span>
+                <a href="https://immiforms.ai/" target="_blank" rel="noopener noreferrer" className="live-link-badge">Live Project</a>
+                <button onClick={() => openSlider('immiforms')} className="preview-eye-btn" title="View Screenshots"><FaEye /></button>
               </div>
             </div>
             
@@ -932,46 +1003,7 @@ function App() {
         </div>
       </section>
         {/* --- ARCADE TERMINAL SECTION END --- */}
-    <section id="education" className="edu-section">
-      <div className="edu-container">
-        
-        {/* मिनी पिल बैज */}
-        <div className="edu-pill">
-          <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" style={{width: '14px', height: '14px'}}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.425-4.761 1.146 1.146 0 0 1 1.931-1.28c.67.974 1.352 1.97 2.029 2.975m11.522 3.066a50.619 50.619 0 0 1 2.426-4.761 1.146 1.146 0 0 0-1.93-1.28c-.67.974-1.352 1.97-2.03 2.975m-12.113 0a48.654 48.654 0 0 1 14.086 0m-14.086 0A49.54 49.54 0 0 1 12 11.25c2.597 0 5.117-.196 7.574-.573m0 0V5.25" />
-          </svg>
-          Education
-        </div>
-
-        {/* टाइटल और सबटाइटल */}
-        <h2 className="edu-heading">Academic Background</h2>
-        <p className="edu-subtitle">My educational journey and academic achievements</p>
-
-        {/* ग्रिड रैपर */}
-        <div className="edu-grid">
-          {educationData.map((item) => (
-            <div key={item.id} className="edu-card">
-              
-              {/* ऑरेंज बैज */}
-              {item.badge && <span className="edu-badge">{item.badge}</span>}
-
-              {/* आइकॉन सर्कल */}
-              <div className="edu-icon-circle">{item.icon}</div>
-
-              {/* टाइटल / सबटाइटल */}
-              <div className="edu-content">
-                <h3 className="edu-title">{item.title}</h3>
-                <h4 className="edu-sub">{item.subtitle}</h4>
-              </div>
-
-              {/* बॉटम छोटा टेक्स्ट */}
-              <p className="edu-details">{item.details}</p>
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </section>
+   
         <section id="contact" className="section contact-section">
           <p className="section-subtitle">CONTACT</p>
 

@@ -118,7 +118,7 @@ a {
 
 .hero {
   min-height: calc(100vh - 80px);
-  padding: 30px 7%;
+  padding: 30px 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -220,12 +220,12 @@ a {
 /* Sections */
 
 .section {
-  padding: 25px 7%;
+  padding: 25px 2%;
   border-top: 1px solid #191919;
 }
 
 .section h2 {
-  font-size: clamp(35px, 5vw, 55px);
+  font-size: clamp(35px, 5vw, 35px);
  /* margin-bottom: 25px;*/
 }
 
@@ -1024,14 +1024,14 @@ footer {
 }
 /* एजुकेशन सेक्शन कंटेनर */
 .edu-section {
-  padding: 80px 20px;
+ /* padding: 20px 20px;*/
   
   font-family: 'Poppins', system-ui, -apple-system, sans-serif;
   text-align: center;
 }
 
 .edu-container {
-  max-width: 1140px;
+ /* max-width: 1140px;*/
   margin: 0 auto;
 }
 
@@ -1058,7 +1058,7 @@ footer {
   font-size: 42px;
   font-weight: 800;
   
-  margin: 0 0 12px 0;
+ /* margin: 0 0 12px 0;*/
   letter-spacing: -0.5px;
 }
 
@@ -1066,7 +1066,7 @@ footer {
   font-size: 16px;
   
   max-width: 600px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 30px auto;
 }
 
 /* 4-कॉलम रेस्पॉन्सिव ग्रिड लेआउट */
