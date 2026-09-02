@@ -183,60 +183,87 @@ const ArcadeTerminal = () => {
     { id: "g5", title: "MEMORY MATRIX", subtitle: "Asynchronous Timing Run", description: "A premium Simon Says extension handling sequence tracking chains via unified Promise await triggers and high score local cache sync.", tech: ["JS Promises", "Async/Await", "Local Storage"], folderName: "memory-matrix", category: "Neural Test" },
     { id: "g6", title: "CYBERPUNK MINESWEEPER", subtitle: "Recursive Terminal Script", description: "Secure data grid system operating recursive Flood-Fill sweep macros to chain-reveal empty coordinates without trigger-dead clicks.", tech: ["Flood-Fill", "Recursion", "DOM Control"], folderName: "minesweeper", category: "Data Security" }
   ];
-  return ( 
-      <section className="arcade-section">
-        <div className="arcade-container">
-          
-          {/* Header Layout */}
-          <div className="arcade-header">
-            <h2><span>&gt;</span> // ARCADE_GAMING_TERMINAL</h2>
-            <p>Production modules served standalone via secure static public subdirectories.</p>
-          </div>
+return ( 
+  <section className="px-[2%] py-12 border-t border-[#0f172a] text-white w-full block clear-both relative">
+    <div className="mx-auto w-full">
+      
+      {/* Header Layout */}
+      <div className="mb-10 text-left w-full block">
+        <h2 className="font-['Orbitron'] font-mono text-2xl md:text-[28px] font-extrabold tracking-[2px] text-[#22d3ee] m-0">
+          <span className="text-[#ec4899] mr-1.5">&gt;</span> // ARCADE_GAMING_TERMINAL
+        </h2>
+        <p className="font-['Orbitron'] font-mono text-[#64748b] text-[12px] m-0 mt-2">
+          Production modules served standalone via secure static public subdirectories.
+        </p>
+      </div>
 
-          {/* Grid Layout Framework Mapping */}
-          <div className="arcade-grid">
-            {portfolioGames.map((game) => (
-              <div key={game.id} className="arcade-card">
+      {/* Grid Layout Framework Mapping (Fixed grid rendering boundaries) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full items-stretch">
+        {portfolioGames.map((game) => (
+          <div 
+            key={game.id} 
+            className="group border border-[#1e293b] bg-[#090d1a] rounded-2xl relative overflow-hidden h-[450px] w-full shadow-[0_10px_15px_-3px_rgba(0,0,0,0.5)] backdrop-blur-[2px] transition-all duration-300 hover:border-[#22d3ee] hover:-translate-y-1.5 hover:shadow-[0_20px_30px_-10px_rgba(6,182,212,0.25)] flex flex-col justify-between"
+          >
+            
+            {/* Background Canvas Layer */}
+            <div className="absolute inset-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+              <AutoGameplayCanvas gameId={game.id} />
+            </div>
+            
+            {/* Pure Foreground Layer (Content + Buttons grouped tight together inside the same block) */}
+            <div className="relative z-10 p-6 h-full w-full flex flex-col justify-between flex-1 box-border">
+              
+              {/* Upper Text Content Block */}
+              <div className="w-full block text-left">
+                <span className="inline-block font-['Orbitron'] font-mono text-[10px] font-bold text-[#f43f5e] bg-[#f43f5e]/15 px-2.5 py-1 border border-[#f43f5e]/25 rounded-full tracking-wider uppercase">
+                  {game.category}
+                </span>
                 
-                {/* Part 2 Logic Canvas Injection */}
-                <AutoGameplayCanvas gameId={game.id} />
+                <h3 className="font-['Orbitron'] text-xl font-bold text-[#f8fafc] tracking-wide mt-4 mb-0.5 whitespace-nowrap overflow-hidden text-ellipsis">
+                  {game.title}
+                </h3>
                 
-                {/* Pure Foreground HTML Elements Content */}
-                <div className="card-inner-layer">
-                  <div className="card-top-content">
-                    <span className="card-category">{game.category}</span>
-                    <h3 className="card-title">{game.title}</h3>
-                    <p className="card-subtitle">{game.subtitle}</p>
-                    <p className="card-description">{game.description}</p>
-                  </div>
-                  
-                  <div className="card-bottom-content">
-                    <div className="tech-badges-row">
-                      {game.tech.map((t, i) => (
-                        <span key={i} className="tech-badge">{t}</span>
-                      ))}
-                    </div>
-                    
-                    <a 
-                      href={`${import.meta.env.BASE_URL}games/${game.folderName}/`} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="deploy-button"
-                    >
-                      DEPLOY ENGINE
-                    </a>
-                  </div>
-                </div>
-
+                <p className="font-['Orbitron'] font-mono text-[11px] text-[#06b6d4] m-0 mb-3">
+                  {game.subtitle}
+                </p>
+                
+                <p className="text-[13px] text-[#94a3b8] leading-[1.6] m-0 mb-4 font-sans line-clamp-4">
+                  {game.description}
+                </p>
               </div>
-            ))}
-          </div>
+              
+              {/* Lower Buttons and Badges Block (Always stays at bottom inside the same card) */}
+              <div className="w-full block mt-auto">
+                <div className="flex flex-wrap gap-1.5 mb-4">
+                  {game.tech.map((t, i) => (
+                    <span 
+                      key={i} 
+                      className="font-mono text-[10px] bg-[#020617] px-2 py-0.5 rounded text-[#94a3b8] border border-[#1e293b] white-space-nowrap"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                
+                <a 
+                  href={`${import.meta.env.BASE_URL}games/${game.folderName}/`} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block w-full text-center py-2.5 rounded-xl bg-transparent border border-[#06b6d4] text-[#06b6d4] font-['Orbitron'] font-bold text-[12px] tracking-wide no-underline transition-all duration-200 hover:bg-[#06b6d4] hover:text-[#020617] hover:shadow-[0_0_15px_rgba(6,182,212,0.4)]"
+                >
+                  DEPLOY ENGINE
+                </a>
+              </div>
 
-        </div>
-      </section>
-        
-   
-  );
-};
+            </div>
+
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </section> 
+);
+}
 
 export default ArcadeTerminal;
