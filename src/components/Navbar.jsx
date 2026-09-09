@@ -53,7 +53,7 @@ const Navbar = () => {
         {/* Action Buttons */}
         <nav className="flex flex-col gap-4 w-full md:flex-row md:w-auto md:gap-3 text-center text-sm font-medium">
           <a 
-            href="/Ansh-Patel-Resume.pdf" 
+            href="./Ansh-Patel-Resume.pdf" 
             target="_blank" 
             onClick={() => setIsMenuOpen(false)} 
             className="px-4 py-2.5 rounded-lg border border-neutral-700 hover:border-amber-500 text-neutral-200 hover:text-amber-500 transition-all duration-200"
